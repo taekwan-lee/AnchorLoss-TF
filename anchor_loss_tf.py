@@ -1,3 +1,6 @@
+import tensorflow as tf
+
+
 def anchor_loss(onehot_labels, logits, weights, gamma=0.5, slack=0.05):
   """Compute anchor loss between `logits` and the ground truth `labels`.
      Anchor Loss: modulates the standard cross entropy based on the prediction difficulty.
